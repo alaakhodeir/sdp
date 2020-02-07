@@ -1,0 +1,22 @@
+extends index.pug
+ 
+block content
+  .main.container
+    .row
+      .col-md-7.col-md-offset-3
+        h1.display-4.m-b-2 Contact me!
+        
+        form(method='post' action='citys/create')
+        
+          div.form-group
+            label(for='content') Email:
+            input#content.form-control(type='text', placeholder='Enter Your Email' name='content' required)
+            label(for='connections') Message:
+            input#connections.form-control(type='text', placeholder='Leave your Message' name='connections' required)
+        
+
+        
+          button.btn.btn-primary(type='submit', role='submit') Send
+
+ 
+
